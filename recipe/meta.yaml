@@ -33,7 +33,7 @@ test:
   requires:
     - pytorch-cpu
   imports:
-    - numpy
+    - skorch
 
 about:
   home: https://github.com/dnouri/skorch
