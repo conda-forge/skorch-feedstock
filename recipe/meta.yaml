@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -30,8 +30,11 @@ requirements:
     - tqdm >=4.14.0
 
 test:
+  requires:
+    - pytorch-cpu
+    - glib >=2.14
   imports:
-    - numpy
+    - skorch
 
 about:
   home: https://github.com/dnouri/skorch
