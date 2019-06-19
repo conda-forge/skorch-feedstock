@@ -22,10 +22,8 @@ requirements:
   run:
     - python >=3.5
     - numpy >=1.13.3
-    - pyyaml >=3.12
-    - setuptools
     - scikit-learn >=0.19.1
-    - scipy >=0.19.0
+    - scipy >=1.1.0
     - tabulate >=0.7.7
     - tqdm >=4.14.0
 
