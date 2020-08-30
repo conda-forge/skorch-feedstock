@@ -5,7 +5,7 @@ Home: https://github.com/dnouri/skorch
 
 Package license: BSD-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A scikit-learn compatible neural network library that wraps pytorch
 
