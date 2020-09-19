@@ -1,5 +1,5 @@
 {% set name = "skorch" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5908fdc3c1c8ae49d16fa3edb1fbdd412c44f2baee02abdd5432b7a47933a7d0
+  sha256: bdce9370153fd80c5c4ec499a639f55eef0620e45d4b15fbf7d7ff2a225a3d40
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/dnouri/skorch
-  license: BSD-3
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: A scikit-learn compatible neural network library that wraps pytorch
