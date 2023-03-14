@@ -1,11 +1,11 @@
-About skorch
-============
+About skorch-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skorch-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dnouri/skorch
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skorch-feedstock/blob/main/LICENSE.txt)
 
 Summary: A scikit-learn compatible neural network library that wraps pytorch
 
