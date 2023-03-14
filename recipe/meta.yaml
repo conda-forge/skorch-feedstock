@@ -1,5 +1,5 @@
 {% set name = "skorch" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b35cb4e50045742f0ffcfad33044af691d5d36b50212573753a804483a947ca9
+  sha256: 7e335b358fc3afb9605463eb1c94ef3c6ba1c8f47a2154bba21050308f89d7e9
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.13.3
     - pytorch
-    - scikit-learn >=0.19.1
+    - scikit-learn >=0.22.0
     - scipy >=1.1.0
     - tabulate >=0.7.7
     - tqdm >=4.14.0
