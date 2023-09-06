@@ -1,5 +1,5 @@
 {% set name = "skorch" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fddd2cd0de345b5f2e19f55b0fd5446e16d67ddba8a3e4c1a838e64e48cc531b
+  sha256: dfd5d50650a66e0d7adb3f6e2fce0666b53ebfe33cc1a5db19d555ef66587fce
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
