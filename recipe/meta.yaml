@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 25ca65c1a79894644025744d69cd586bf8605a81c4f8d5a3661094f5e692c914
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.13.3
     - pytorch
     - scikit-learn >=0.22.0
@@ -29,6 +29,8 @@ requirements:
     - tqdm >=4.14.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - numpy
 
