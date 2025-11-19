@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.13.3
-    - pytorch
+    - pytorch >=2.6.0
     - scikit-learn >=0.22.0
     - scipy >=1.1.0
     - tabulate >=0.7.7
